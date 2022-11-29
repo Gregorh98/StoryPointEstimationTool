@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Story Point Estimation Tool</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
   </head>
   <body onLoad="calculateStoryPoints()">
@@ -14,7 +14,34 @@
     
     <div class="container text-center">
 		<div class="row">
-			<div class="col">
+			<div class="col-sm my-auto">
+				<h1>Questions</h1>
+				
+				<ul class="list-group rounded-0"  id="questionChecklist" style="text-align:left">
+					<li class="list-group-item border-0 d-flex align-items-left ps-0">
+						<input class="form-check-input me-3" id="checkbox1" type="checkbox" value="" aria-label="..."/>
+						<label onClick="labelClicked('label1')" id="label1">What does the system currently do?</label>
+					</li>
+					<li class="list-group-item border-0 d-flex align-items-left ps-0">
+						<input class="form-check-input me-3" type="checkbox" value="" aria-label="..." />
+						What would the system do after the change is made?
+					</li>
+					<li class="list-group-item border-0 d-flex align-items-left ps-0">
+						<input class="form-check-input me-3" type="checkbox" value="" aria-label="..." />
+						What work does the change involve?
+					</li>
+					<li class="list-group-item border-0 d-flex align-items-left ps-0">
+						<input class="form-check-input me-3" type="checkbox" value="" aria-label="..." />
+						Is there anything this change could affect?
+					</li>
+						<li class="list-group-item border-0 d-flex align-items-left ps-0">
+						<input class="form-check-input me-3" type="checkbox" value="" aria-label="..." />
+						Do unit tests need to be added for this change?
+					</li>
+            </ul>
+			
+			</div>
+			<div class="col-sm my-auto">
 				<div class="container" id="uncertainty">
 					<label for="uncertaintyRange" class="form-label">
 						<h6>
@@ -45,8 +72,8 @@
 					<input type="range" class="form-range" min="0" max="2" value="0" id="effortRange" oninput="calculateStoryPoints()" oninput="calculateStoryPoints()">
 				</div>
 			</div>
-			<div class="col my-auto">
-				<h1 id="estimatedStoryPoints">n/a</h1>
+			<div class="col-sm my-auto">
+				<h1 id="estimatedStoryPoints">n/a</h1>	
 			</div>
 		</div>
 	</div>

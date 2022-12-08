@@ -85,4 +85,5 @@ function labelClicked(n)
 	var i = document.getElementById(n).innerHTML;
 	console.log(i);
 	document.getElementById(n).outerHTML = '<s>'+i+"</s>"
+	document.getElementById(n).outerHTML = '<s>'+i+"</s>"
 }

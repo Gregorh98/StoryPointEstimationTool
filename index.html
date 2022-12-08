@@ -17,29 +17,44 @@
 			<div class="col-sm my-auto">
 				<h1>Questions</h1>
 				
-				<ul class="list-group rounded-0"  id="questionChecklist" style="text-align:left">
-					<li class="list-group-item border-0 d-flex align-items-left ps-0">
-						<input class="form-check-input me-3" id="checkbox1" type="checkbox" value="" aria-label="..."/>
-						<label onClick="labelClicked('label1')" id="label1">What does the system currently do?</label>
-					</li>
-					<li class="list-group-item border-0 d-flex align-items-left ps-0">
-						<input class="form-check-input me-3" type="checkbox" value="" aria-label="..." />
-						What would the system do after the change is made?
-					</li>
-					<li class="list-group-item border-0 d-flex align-items-left ps-0">
-						<input class="form-check-input me-3" type="checkbox" value="" aria-label="..." />
-						What work does the change involve?
-					</li>
-					<li class="list-group-item border-0 d-flex align-items-left ps-0">
-						<input class="form-check-input me-3" type="checkbox" value="" aria-label="..." />
-						Is there anything this change could affect?
-					</li>
+				<div style="height:300px;line-height:1em;overflow:auto;padding:5px;">
+					<ul class="list-group rounded-0"  id="questionChecklist" style="text-align:left">
 						<li class="list-group-item border-0 d-flex align-items-left ps-0">
-						<input class="form-check-input me-3" type="checkbox" value="" aria-label="..." />
-						Do unit tests need to be added for this change?
-					</li>
-            </ul>
-			
+							<input class="form-check-input me-3" id="checkbox1" type="checkbox" value="" aria-label="..."/>
+							<label onClick="labelClicked('label1')" id="label1">What does the system currently do?</label>
+						</li>
+						<li class="list-group-item border-0 d-flex align-items-left ps-0">
+							<input class="form-check-input me-3" type="checkbox" value="" aria-label="..." />
+							What would the system do after the change is made?
+						</li>
+						<li class="list-group-item border-0 d-flex align-items-left ps-0">
+							<input class="form-check-input me-3" type="checkbox" value="" aria-label="..." />
+							What work does the change involve?
+						</li>
+						<ul>
+							<li class="list-group-item border-0 d-flex align-items-left ps-0">
+								<input class="form-check-input me-3" type="checkbox" value="" aria-label="..." />
+								Is there anything else this change could affect?
+							</li>
+							<li class="list-group-item border-0 d-flex align-items-left ps-0">
+								<input class="form-check-input me-3" type="checkbox" value="" aria-label="..." />
+								Do unit tests need to be added for this change?
+							</li>
+							<li class="list-group-item border-0 d-flex align-items-left ps-0">
+								<input class="form-check-input me-3" type="checkbox" value="" aria-label="..." />
+								Is logging required for this change?
+							</li>
+							<li class="list-group-item border-0 d-flex align-items-left ps-0">
+								<input class="form-check-input me-3" type="checkbox" value="" aria-label="..." />
+								What technical knowlege do I need for this change?
+							</li>
+							<li class="list-group-item border-0 d-flex align-items-left ps-0">
+								<input class="form-check-input me-3" type="checkbox" value="" aria-label="..." />
+								What risk does this introduce?
+							</li>
+						</ul>
+					</ul>
+				</div>
 			</div>
 			<div class="col-sm my-auto">
 				<div class="container" id="uncertainty">
